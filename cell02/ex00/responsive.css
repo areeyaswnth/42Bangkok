@@ -1,0 +1,30 @@
+html {
+    height: 100%;
+}
+body {
+      height: 100%;
+}
+
+table {
+    width: 100%;
+}
+td {
+    
+    width: 200px;
+    border: 1px solid black
+
+}
+
+th {
+    height: 100vh;
+    width: 50vh;
+}
+.bg1:nth-child(1){
+    background-color: rgb(91, 158, 39);;
+}
+.bg1:nth-child(2){
+    background-color:rgb(237, 176, 96);;
+}
+.bg {
+    text-align: center;
+}

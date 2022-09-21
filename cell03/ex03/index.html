@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+<style>
+    body {
+        text-align: center;
+        font-family: "Courier New";
+
+    }
+    h1,
+    button {
+        background-color: paleturquoise;
+        padding: 20px 20px;
+        display: inline-block;
+        border-radius: 12px;
+        border: none;
+        margin-bottom: 20px;
+    }
+    button {
+        font-family: "Courier New";
+        font-size: 20px;
+        background-color: rgb(255, 183, 207);
+        padding: 20px 20px;
+        display: inline-block;
+        border-radius: 12px;
+        border: none;
+    }
+
+    .ft_list {
+        display: flex;
+        flex-direction: column;
+        background-color: plum;
+        padding: 10px 10px;
+        border-radius: 12px;
+        border: none;
+    }
+
+
+</style>
+
+<body>
+    <div>
+        <h1>TO DO LIST</h1>
+        <div class="ft_list" id="ft_list">
+        </div>
+        <button onclick="newButton()">New</button>
+
+    </div>
+    <script src="todo.js"></script>
+</body>
+
+</html>

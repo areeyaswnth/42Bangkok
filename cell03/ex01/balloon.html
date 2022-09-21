@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balloon</title>
+    <script>
+        var r = 200
+        function clicked() {
+            r += 10
+            if (r >= 420) {
+                r = 200
+            }
+            document.getElementById("cc").style.width = r + "px";
+            document.getElementById("cc").style.height = r + "px";
+            if (document.getElementById("cc").style.backgroundColor == "red") {
+                document.getElementById("cc").style.backgroundColor = "green"
+            }
+            else if (document.getElementById("cc").style.backgroundColor == "green") {
+                document.getElementById("cc").style.backgroundColor = "blue"
+            }
+            else if (document.getElementById("cc").style.backgroundColor == "blue") {
+                document.getElementById("cc").style.backgroundColor = "red"
+            }
+        }
+        function left() {
+            r -= 5
+            if (r <= 200) {
+                r = 200
+            }
+            document.getElementById("cc").style.width = r + "px";
+            document.getElementById("cc").style.height = r + "px";
+
+            if (document.getElementById("cc").style.backgroundColor == "red") {
+                document.getElementById("cc").style.backgroundColor = "blue"
+            }
+            else if (document.getElementById("cc").style.backgroundColor == "green") {
+                document.getElementById("cc").style.backgroundColor = "red"
+            }
+            else if (document.getElementById("cc").style.backgroundColor == "blue") {
+                document.getElementById("cc").style.backgroundColor = "green"
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="cc" onclick="clicked()" onmouseleave="left()"
+        style="width: 200px;height: 200px;background-color: red;border-radius: 50%;cursor: pointer;"></div>
+</body>
+
+</html>
